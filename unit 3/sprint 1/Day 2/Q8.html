@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: brown;
+        }
+
+        #form{
+            background-color: rgb(239, 231, 231); 
+            width: 20%; 
+            margin: auto;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .inp{
+            width: 100%;
+            border: none;
+        }
+
+        div{
+            margin-bottom: 10px; 
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(56, 206, 56); 
+            color: white;
+            display: block;
+            margin: auto;
+            padding: 10px 15px;
+            border-radius: 4px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Feedback Form</h1>
+    <form action="" id="form">
+        <div>
+         <label for="feedback">Feedback Type:</label>
+         <br>
+         <select name="feedback" class="inp">
+             <option value="">Compliment</option>
+         </select>
+        </div>
+ 
+        <div>
+         <label for="">Message:</label>
+         <br>
+         <textarea name="userMessage" id="" class="inp" rows="4"></textarea>
+        </div>
+ 
+        <div>
+         <label for="">Website Rating:</label>
+         <br>
+         <input type="radio" name="rating"><strong>Excellent</strong>
+         <input type="radio" name="rating"><strong>Good</strong>
+         <input type="radio" name="rating"><strong>Average</strong>
+         <input type="radio" name="rating"><strong>Poor</strong>
+        </div>
+ 
+        <div>
+         <label for="">Age (10-100):</label>
+         <br>
+         <input type="number" inputmode="numeric" min="10" max="100" class="inp">
+        </div>
+ 
+        <div>
+         <label for="">Email <span style="color: red;">*</span>:</label>
+         <br>
+         <input type="email" required class="inp">
+        </div>
+ 
+        <div>
+         <label for="">Password (min. 8 character):</label>
+         <br>
+         <input type="password" minlength="8" class="inp">
+        </div>
+ 
+        <div>
+         <label for="">Website URL (optional):</label>
+         <br>
+         <input type="url" class="inp">
+        </div>
+ 
+        <div>
+         <input type="checkbox"><strong>I agree to the terms and conditions</strong>
+        </div>
+
+         <input type="submit" value="Submit">
+     </form>
+</body>
+</html>
