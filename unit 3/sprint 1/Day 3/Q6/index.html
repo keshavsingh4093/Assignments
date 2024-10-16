@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: whitesmoke;
+        }
+        nav{
+            display: flex;
+            background-color: white;
+            padding: 20px 40px;
+        }
+        section{
+            display: inline-block;
+        }
+        a{
+            text-decoration: none;
+            font-size: 25px;
+            margin: 0px 25px;
+        }
+        a:hover{
+            color: orange;
+            text-decoration: underline;
+        }
+        #first-nav{
+            width: 50%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #sec-nav{
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        #logo{
+            background-image: url(Xiaomi_logo.svg.png);
+            background-size: contain;
+            width: 50px; 
+            height: 50px;
+            border-radius: 15px;
+        }
+        #logo:hover{
+            background-image: url(home.png);
+            background-color: orange;
+            cursor: pointer;
+        }
+        .img{
+            margin: 0px 25px;
+            cursor: pointer;
+            width: 30px; 
+            height: 30px;
+        }
+        #parent{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 10%;
+        }
+        .child{
+            background-color: white;
+            padding: 50px 20px;
+            margin: 10px;
+            width: 18.5%;
+        }
+        .off{
+            border: 3px solid brown;
+            color: brown;
+            background-color: rgb(243, 151, 151);
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 5px 15px;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <section id="first-nav">
+            <span id="logo"></span>
+            <a href="#">Store</a>
+            <a href="#">Phones</a>
+            <a href="#">Tablets</a>
+            <a href="#">TV & Smart Home</a>
+            <a href="#">Smart Watch & Audio</a>
+        </section>
+
+        <section id="sec-nav">
+            <a href="#">Discover</a>
+            <a href="#">Support</a>
+            <img src="search.svg" alt="search" class="img">
+            <img src="trolley.png" alt="trolley" class="img">
+            <img src="people.png" alt="user" class="img">
+        </section>
+    </nav>
+    
+    <div style="margin: 20px auto; width: 70%;">
+        <img src="phone whole image.webp" alt="phone sale" width="100%">
+    </div>
+
+    <div id="parent">
+        <div class="child">
+            <h2>Bluetooth </h2>
+            <h3 class="off">35% off</h3>
+            <div style="display: inline-block;">
+               <h1><span style="font-size: large;">₹</span>399</h1>
+               <h2 style="text-decoration: line-through; color: rgb(192, 248, 230);"><span style="font-size: inherit;">₹</span>499</h2>
+            </div>
+            <div style="display: inline-block;">
+                <img src="bluetooth.png" alt="bluetooth" width="150px" height="200px">
+            </div>
+        </div>
+
+        <div class="child">
+            <h2>Boat Headphones</h2>
+            <h3 class="off">35% off</h3>
+            <div style="display: inline-block;">
+               <h1><span style="font-size: large;">₹</span>1,699</h1>
+               <h2 style="text-decoration: line-through; color: rgb(192, 248, 230);"><span style="font-size: inherit;">₹</span>1,999</h2>
+            </div>
+            <div style="display: inline-block;">
+                <img src="boat headphone.webp" alt="headphones" width="150px" height="200px">
+            </div>
+        </div>
+
+        <div class="child">
+            <h2>LED </h2>
+            <h3 class="off">25% off</h3>
+            <div style="display: inline-block;">
+               <h1><span style="font-size: large;">₹</span>10,999</h1>
+               <h2 style="text-decoration: line-through; color: rgb(192, 248, 230);"><span style="font-size: inherit;">₹</span>12,999</h2>
+            </div>
+            <div style="display: inline-block;">
+                <img src="LED 1.jpg" alt="headphones" width="150px" height="200px">
+            </div>
+        </div>
+        
+        <div class="child">
+            <h2>fantastic LED</h2>
+            <h3 class="off">35% off</h3>
+            <div style="display: inline-block;">
+               <h1><span style="font-size: large;">₹</span>10,999</h1>
+               <h2 style="text-decoration: line-through; color: rgb(192, 248, 230);"><span style="font-size: inherit;">₹</span>11,999</h2>
+            </div>
+            <div style="display: inline-block;">
+                <img src="LED 2.jpg" alt="headphones" width="150px" height="200px">
+            </div>
+        </div>
+
+        <div class="child">
+            <h2>Motrolla 6gb RAM</h2>
+            <h3 class="off">25% off</h3>
+            <div style="display: inline-block;">
+               <h1><span style="font-size: large;">₹</span>9,999</h1>
+               <h2 style="text-decoration: line-through; color: rgb(192, 248, 230);"><span style="font-size: inherit;">₹</span>12,999</h2>
+            </div>
+            <div style="display: inline-block;">
+                <img src="Motorola.webp" alt="headphones" width="150px" height="200px">
+            </div>
+        </div>
+
+        <div class="child">
+            <h2>Redmi Note 12 5G</h2>
+            <h3 class="off">20% off</h3>
+            <div style="display: inline-block;">
+               <h1><span style="font-size: large;">₹</span>13,999</h1>
+               <h2 style="text-decoration: line-through; color: rgb(192, 248, 230);"><span style="font-size: inherit;">₹</span>15,999</h2>
+            </div>
+            <div style="display: inline-block;">
+                <img src="redmi-note-12-5g.webp" alt="headphones" width="150px" height="200px">
+            </div>
+        </div>
+
+        <div class="child">
+            <h2>White Headphones Wireless</h2>
+            <h3 class="off">25% off</h3>
+            <div style="display: inline-block;">
+               <h1><span style="font-size: large;">₹</span>449</h1>
+               <h2 style="text-decoration: line-through; color: rgb(192, 248, 230);"><span style="font-size: inherit;">₹</span>699</h2>
+            </div>
+            <div style="display: inline-block;">
+                <img src="white-headphones-wireless.png" alt="headphones" width="150px" height="200px">
+            </div>
+        </div>
+        
+        <div class="child">
+            <h2>Samsung 4bg 64gb</h2>
+            <h3 class="off">25% off</h3>
+            <div style="display: inline-block;">
+               <h1><span style="font-size: large;">₹</span>10,999</h1>
+               <h2 style="text-decoration: line-through; color: rgb(192, 248, 230);"><span style="font-size: inherit;">₹</span>11,999</h2>
+            </div>
+            <div style="display: inline-block;">
+                <img src="Samsung.webp" alt="headphones" width="150px" height="200px">
+            </div>
+        </div>
+
+    </div>
+    
+    <div style="margin: 20px auto; width: 70%;">
+        <img src="tv whole image.webp" alt="tv sale" width="100%">
+    </div>
+</body>
+</html>

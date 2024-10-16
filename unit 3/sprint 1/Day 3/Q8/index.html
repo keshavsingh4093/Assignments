@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: aliceblue;
+        }
+        #parent{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            width: fit-content;
+            position: fixed;
+        }
+        .nav-icon{
+            width: 80px;
+            height: auto;
+            margin-left: 10px;
+        }
+        #parent>div{
+            width: 100px;
+            height: 100px;
+        }
+        .comp-logo{
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        #mainDiv{
+            display: flex;
+            background-color: rgb(69, 51, 51);
+            height: 40vh;
+            justify-content: space-around;
+            align-items: center;
+        }
+        td{
+            border: 2px solid black;
+            font-size: 30px;
+            padding: 10px;
+        }
+        li{
+            font-size: 30px;
+            color: rgb(241, 210, 210);
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div style="background-color: yellow; flex-basis: 150px;"><img src="maggi.png" alt="" width="120px" style="padding-top: 40px; padding-left: 10px; border-radius: 10px;"></div>
+        <div>
+            <img src="recepie.png" alt="" class="nav-icon"><br>
+            <p style="text-align: center;">Recipes</p>
+        </div>
+        <div>
+            <img src="maggiNav.png" alt="" class="nav-icon">
+            <p style="text-align: center;">Maggi</p>
+        </div>
+        <div>
+            <img src="mymenu.png" alt="" class="nav-icon">
+            <p style="text-align: center;">MyMenu Plan</p>
+        </div>
+        <div>
+            <img src="search.svg" alt="" class="nav-icon">
+            <p style="text-align: center;">Search</p>
+        </div>
+        <div>
+            <img src="people.png" alt="" class="nav-icon">
+            <p style="text-align: center;">Login</p>
+        </div>
+        <div style="background-color: white;"></div>
+    </div>
+
+    <div id="mainDiv">
+        <div>
+             <div>
+                <img src="facebook.png" alt="" class="comp-logo">
+                <img src="youtube.png" alt="" class="comp-logo">
+                <img src="instagram.png" alt="" class="comp-logo">
+                <img src="twitter.png" alt="" class="comp-logo">
+             </div>
+
+             <div>
+               <table style="border: 2px solid black; border-collapse: collapse;">
+                <td>EN</td>
+                <td>HI</td>
+                <td>MR</td>
+                <td>TE</td>
+                <td>KN</td>
+               </table> 
+             </div>     
+        </div>
+
+        <div>
+            <ul>
+                <li>Contact Us</li>
+                <li>Copyright</li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li>Terms and Conditions</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
