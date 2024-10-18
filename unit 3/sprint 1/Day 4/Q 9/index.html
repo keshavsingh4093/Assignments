@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0px 50px;
+            color: white;
+            background-color: black;
+        }
+        #container{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 75px;
+        }
+        .feat{
+            font-size: 20px;
+            margin-bottom: -1px;
+            letter-spacing: 1px;
+        }
+        #sec-child{
+            width: 40%; 
+            padding: 10px 20px; 
+            margin: 40px; 
+            margin-left: 0px; 
+            border-radius: 10px; 
+            box-shadow: 0px 0px 2px white;
+            position: relative;
+        }
+        #get-btn{
+            color: white;
+            font-size: 30px; 
+            font-weight: bold; 
+            width: 90%; 
+            padding: 10px; 
+            border-radius: 10px; 
+            position: absolute;
+            bottom: 30px;
+            left: 35px;
+            background-color: black;
+            box-shadow: 0px 0px 2px white;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color: blue;">PRICING</h2>
+    <h1 style="font-size: 50px;">One Price for Everything</h1>
+    <p style="font-size: 20px; margin-top: -20px; word-spacing: 3px; letter-spacing: 1.5px; color: rgba(245, 245, 245, 0.656);">The simplest pricing in the industry. You won't need a calculator for this</p>
+
+    <div id="container">
+        <div style="width: 60%; padding: 25px; box-shadow: 0px 0px 2px white; border-radius: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="font-size: 40px; margin-bottom: 5px;">Pro</div>
+                <div style="display: flex; align-items: center; gap: 20px;">
+                  <div class="feat">Bill Monthly</div>
+                  <img src="switch.png" alt="" style="width: 50px;">
+                  <div class="feat">Bill Yearly</div>
+                </div>
+            </div>
+            <p class="feat" style="margin: 0px;">includes everything you need for your website</p>
+            <span style="font-size: 80px; font-weight: bold;">$20</span>
+            <span style="font-size: 25px; position: relative; bottom: 18px; left:10px;">/ Site / Month (billed anually)</span><br>
+
+            <div style="display: flex; flex-direction: column; flex-wrap: wrap;height: 360px;">
+                <p class="feat"><span style="color: rgba(0, 0, 255, 0.844);">&#x2714;</span> Custom Domains</p>
+                <p class="feat"><span style="color: rgba(0, 0, 255, 0.844);">&#x2714;</span> GDPR Solution</p>
+                <p class="feat"><span style="color: rgba(0, 0, 255, 0.844);">&#x2714;</span> Beautiful Site Design</p>
+                <p class="feat"><span style="color: rgba(0, 0, 255, 0.844);">&#x2714;</span> Super-Fast Hosting</p>
+                <p class="feat"><span style="color: rgba(0, 0, 255, 0.844);">&#x2714;</span> Analytics</p>
+                <p class="feat"><span style="color: rgba(0, 0, 255, 0.844);">&#x2714;</span> Custom Forms</p>
+                <p class="feat"><span style="color: rgba(0, 0, 255, 0.844);">&#x2714;</span> Bloging</p>
+                <p class="feat"><span style="color: rgba(0, 0, 255, 0.844);">&#x2714;</span> Password Protection</p>
+                <p class="feat"><span style="color: rgba(0, 0, 255, 0.844);">&#x2714;</span> Multilingual Sites</p>
+                <p class="feat"><span style="color: rgba(0, 0, 255, 0.844);">&#x2714;</span> User Management</p>
+                <p class="feat"><span style="color: rgba(0, 0, 255, 0.844);">&#x2714;</span> Unlimited Pages</p>
+                <p class="feat"><span style="color: rgba(0, 0, 255, 0.844);">&#x2714;</span> Unlimited Team Members</p>
+            </div>
+
+            <button style="width: 100%; padding: 10px; font-size: 25px; font-weight: bold; border-radius: 10px; background-color: blueviolet;">Get Started <span>&#8594;</span></button>
+        </div>
+           
+        <div id="sec-child">
+           <h2 style="font-size: 50px; margin-top: 10px;">Basic</h2>
+           <p class="feat" style="margin-top: -20px;">Publish your site for free with almost all pro features.</p>
+           <h1 style="font-size: 50px;">Free</h1>
+           <p class="feat">Everything from Pro, except</p>
+           <p class="feat">- No Custom Domain</p>
+           <p class="feat">- "Made with usmo" Branding</p>
+           <p class="feat">No credit card required</p>
+           <button id="get-btn">Get Started</button>
+        </div>
+    </div>
+</body>
+</html>
